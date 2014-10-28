@@ -8,7 +8,7 @@ use Carp qw( croak );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '0.02'; # VERSION
 
 
 sub _dlext
@@ -174,7 +174,7 @@ use constant _free => FFI::Raw->new(
 
 sub new
 {
-  my($class) = @_;
+  my($class, %opt) = @_;
   
   my $self = bless {
     handle   => _new->call,
@@ -194,6 +194,8 @@ sub new
   {
     $self->add_library_path("N:/home/ollisg/dev/FFI-TinyCC/share/lib");
   }
+  
+  $self->{no_free_store} = 1 if $opt{_no_free_store};
   
   $self;
 }
@@ -217,7 +219,7 @@ sub DESTROY
   {  
     _delete->call($self->{handle});
     # TODO: should we do this?
-    _free->call($self->{store}) if defined $self->{store};
+    _free->call($self->{store}) if defined $self->{store} && !$self->{no_free_store};
   }
 }
 
@@ -444,7 +446,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 
@@ -477,6 +479,8 @@ TinyCC.  It does almost no optimizations, so C<gcc> or C<clang> will
 probably generate faster code, but it is very small and is very fast
 and thus may be useful for some Just In Time (JIT) or Foreign Function
 Interface (FFI) situations.
+
+For a simpler, but less powerful interface see L<FFI::TinyCC::Inline>.
 
 =head1 CONSTRUCTOR
 
@@ -691,9 +695,25 @@ method.
  
  say $square->call($value);
 
+=head1 BUNDLED SOFTWARE
+
+This package also comes with a parser that was shamelessly stolen from L<XS::TCC>,
+itself borrowed which I strongly suspect was itself shamelessly "borrowed"
+from L<Inline::C::Parser::RegExp>
+
+The license details for the parser are:
+
+Copyright 2002 Brian Ingerson
+Copyright 2008, 2010-2012 Sisyphus
+Copyright 2013 Steffen Muellero
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+
 =head1 SEE ALSO
 
 =over 4
+
+=item L<FFI::TinyCC::Inline>
 
 =item L<Tiny C|http://bellard.org/tcc/>
 

@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.021, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -41,6 +41,7 @@
             "Carp" : "0",
             "FFI::Raw" : "0.32",
             "File::ShareDir" : "0",
+            "base" : "0",
             "perl" : "v5.10.0"
          }
       },
@@ -65,6 +66,6 @@
          "web" : "https://github.com/plicease/FFI-TinyCC"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }
 
