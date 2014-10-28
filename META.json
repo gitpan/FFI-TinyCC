@@ -1,0 +1,70 @@
+{
+   "abstract" : "Tiny C Compiler for FFI",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.021, CPAN::Meta::Converter version 2.142690",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "FFI-TinyCC",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Alien::TinyCC" : "0",
+            "Archive::Ar" : "2.02",
+            "File::chdir" : "0",
+            "IPC::System::Simple" : "0",
+            "Module::Build" : "0.3601",
+            "Path::Class" : "0.26",
+            "autodie" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Alien::TinyCC" : "0",
+            "Archive::Ar" : "2.02",
+            "File::chdir" : "0",
+            "IPC::System::Simple" : "0",
+            "Module::Build" : "0.3601",
+            "Path::Class" : "0",
+            "autodie" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "FFI::Raw" : "0.32",
+            "File::ShareDir" : "0",
+            "perl" : "v5.10.0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Archive::Ar" : "2.02",
+            "File::chdir" : "0",
+            "Path::Class" : "0.26",
+            "Test::More" : "0.94"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/FFI-TinyCC/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/FFI-TinyCC",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/FFI-TinyCC.git",
+         "web" : "https://github.com/plicease/FFI-TinyCC"
+      }
+   },
+   "version" : "0.01"
+}
+
