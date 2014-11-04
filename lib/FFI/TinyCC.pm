@@ -2,13 +2,13 @@ package FFI::TinyCC;
 
 use strict;
 use warnings;
-use v5.10;
+use 5.010;
 use FFI::Raw;
 use Carp qw( croak );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 sub _dlext
@@ -446,7 +446,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -611,7 +611,7 @@ method.
 
  use strict;
  use warnings;
- use v5.10;
+ use 5.010;
  use FFI::TinyCC;
  use FFI::Raw;
  
@@ -633,7 +633,7 @@ method.
 
  use strict;
  use warnings;
- use v5.10;
+ use 5.010;
  use FFI::TinyCC;
  use FFI::Raw;
  
@@ -670,7 +670,7 @@ method.
 
  use strict;
  use warnings;
- use v5.10;
+ use 5.010;
  use FFI::TinyCC;
  use FFI::Raw;
  

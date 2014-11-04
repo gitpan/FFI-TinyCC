@@ -2,7 +2,7 @@ package FFI::TinyCC::Inline;
 
 use strict;
 use warnings;
-use v5.10;
+use 5.010;
 use FFI::TinyCC;
 use FFI::Raw;
 use Carp qw( croak );
@@ -12,7 +12,7 @@ our @EXPORT_OK = qw( tcc_inline tcc_eval );
 our @EXPORT = @EXPORT_OK;
 
 # ABSTRACT: Embed Tiny C code in your Perl program
-our $VERSION = '0.02'; # VERSION
+our $VERSION = '0.03'; # VERSION
 
 
 my %typemap = (
@@ -315,7 +315,7 @@ FFI::TinyCC::Inline - Embed Tiny C code in your Perl program
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
