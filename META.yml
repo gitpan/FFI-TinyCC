@@ -11,7 +11,6 @@ build_requires:
   Path::Class: '0.26'
   Test::More: '0.94'
   autodie: '0'
-  perl: '5.010'
 configure_requires:
   Alien::TinyCC: '0'
   Archive::Ar: '2.02'
@@ -20,9 +19,8 @@ configure_requires:
   Module::Build: '0.3601'
   Path::Class: '0'
   autodie: '0'
-  perl: '5.010'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690'
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -38,4 +36,4 @@ resources:
   bugtracker: https://github.com/plicease/FFI-TinyCC/issues
   homepage: http://perl.wdlabs.com/FFI-TinyCC
   repository: git://github.com/plicease/FFI-TinyCC.git
-version: '0.03'
+version: '0.04'
