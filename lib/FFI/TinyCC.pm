@@ -8,7 +8,7 @@ use Carp qw( croak );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.04'; # VERSION
+our $VERSION = '0.05'; # VERSION
 
 
 sub _dlext
@@ -192,7 +192,10 @@ sub new
   
   if($^O eq 'MSWin32')
   {
-    $self->add_library_path("N:/home/ollisg/dev/FFI-TinyCC/share/lib");
+    require File::Basename;
+    require File::Spec;
+    my $path = File::Spec->catdir(File::Basename::dirname(_lib), 'lib');
+    $self->add_library_path($path);
   }
   
   $self->{no_free_store} = 1 if $opt{_no_free_store};
@@ -446,7 +449,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

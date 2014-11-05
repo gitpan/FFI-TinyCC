@@ -4,7 +4,7 @@
       "Graham Ollis <plicease@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.142690",
+   "generated_by" : "Dist::Zilla version 5.023, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -33,7 +33,8 @@
             "IPC::System::Simple" : "0",
             "Module::Build" : "0.3601",
             "Path::Class" : "0",
-            "autodie" : "0"
+            "autodie" : "0",
+            "perl" : "5.010"
          }
       },
       "runtime" : {
@@ -51,7 +52,8 @@
             "Archive::Ar" : "2.02",
             "File::chdir" : "0",
             "Path::Class" : "0.26",
-            "Test::More" : "0.94"
+            "Test::More" : "0.94",
+            "perl" : "5.010"
          }
       }
    },
@@ -67,6 +69,6 @@
          "web" : "https://github.com/plicease/FFI-TinyCC"
       }
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }
 
