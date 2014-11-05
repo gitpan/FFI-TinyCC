@@ -8,7 +8,7 @@ use Carp qw( croak );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 sub _dlext
@@ -449,7 +449,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -568,6 +568,11 @@ Undefine the given symbol.
  $tcc->set_output_type('obj');
 
 Set the output type.  This must be called before any compilation.
+
+Output formats may not be supported on your platform.  C<exe> is
+NOT supported on *BSD or OS X.
+
+As a basic baseline at least C<memory> should be supported.
 
 =head3 add_library
 
@@ -698,19 +703,13 @@ method.
  
  say $square->call($value);
 
-=head1 BUNDLED SOFTWARE
+=head1 CAVEATS
 
-This package also comes with a parser that was shamelessly stolen from L<XS::TCC>,
-itself borrowed which I strongly suspect was itself shamelessly "borrowed"
-from L<Inline::C::Parser::RegExp>
+Tiny C is only supported on platforms with ARM or Intel processors.  All features may not be fully supported on
+all operating systems.
 
-The license details for the parser are:
-
-Copyright 2002 Brian Ingerson
-Copyright 2008, 2010-2012 Sisyphus
-Copyright 2013 Steffen Muellero
-
-This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
+Tiny C is no longer supported by its original author, though various forks seem to have varying levels of support.
+We use the fork that comes with L<Alien::TinyCC>.
 
 =head1 SEE ALSO
 
@@ -727,6 +726,20 @@ This program is free software; you can redistribute it and/or modify it under th
 =item L<Alien::TinyCC>
 
 =back
+
+=head1 BUNDLED SOFTWARE
+
+This package also comes with a parser that was shamelessly stolen from L<XS::TCC>,
+which I strongly suspect was itself shamelessly "borrowed" from 
+L<Inline::C::Parser::RegExp>
+
+The license details for the parser are:
+
+Copyright 2002 Brian Ingerson
+Copyright 2008, 2010-2012 Sisyphus
+Copyright 2013 Steffen Muellero
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
 

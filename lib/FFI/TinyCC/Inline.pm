@@ -12,7 +12,7 @@ our @EXPORT_OK = qw( tcc_inline tcc_eval );
 our @EXPORT = @EXPORT_OK;
 
 # ABSTRACT: Embed Tiny C code in your Perl program
-our $VERSION = '0.05'; # VERSION
+our $VERSION = '0.06'; # VERSION
 
 
 my %typemap = (
@@ -315,7 +315,7 @@ FFI::TinyCC::Inline - Embed Tiny C code in your Perl program
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -411,6 +411,20 @@ Returns the result.
 =item L<FFI::TinyCC>
 
 =back
+
+=head1 BUNDLED SOFTWARE
+
+This package also comes with a parser that was shamelessly stolen from L<XS::TCC>,
+which I strongly suspect was itself shamelessly "borrowed" from 
+L<Inline::C::Parser::RegExp>
+
+The license details for the parser are:
+
+Copyright 2002 Brian Ingerson
+Copyright 2008, 2010-2012 Sisyphus
+Copyright 2013 Steffen Muellero
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
 =cut
 
