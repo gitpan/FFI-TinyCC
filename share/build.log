@@ -1,30 +1,52 @@
---- clean 1415138022---
---- build 1415138022---
-lib = /home/ollisg/.perlbrew/libs/perl-5.20.1c@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /tmp/jcLCDPsfiT
-obj = /tmp/jcLCDPsfiT/i386-asm.o
-obj = /tmp/jcLCDPsfiT/x86_64-gen.o
-obj = /tmp/jcLCDPsfiT/tccrun.o
-obj = /tmp/jcLCDPsfiT/tccasm.o
-obj = /tmp/jcLCDPsfiT/tccelf.o
-obj = /tmp/jcLCDPsfiT/tccgen.o
-obj = /tmp/jcLCDPsfiT/tccpp.o
-obj = /tmp/jcLCDPsfiT/libtcc.o
-+ clang -o /home/ollisg/dev/FFI-TinyCC/share/libtcc.so -shared /tmp/jcLCDPsfiT/i386-asm.o /tmp/jcLCDPsfiT/x86_64-gen.o /tmp/jcLCDPsfiT/tccrun.o /tmp/jcLCDPsfiT/tccasm.o /tmp/jcLCDPsfiT/tccelf.o /tmp/jcLCDPsfiT/tccgen.o /tmp/jcLCDPsfiT/tccpp.o /tmp/jcLCDPsfiT/libtcc.o
+--- clean 1415237632---
+--- build 1415237632---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/Vi1I8JVtNI
++ cc -o /Users/ollisg/dev/FFI-TinyCC/share/libtcc.bundle -shared
 
---- clean 1415138031---
-unlink /home/ollisg/dev/FFI-TinyCC/share/libtcc.so
---- clean 1415138099---
---- build 1415138099---
-lib = /home/ollisg/.perlbrew/libs/perl-5.20.1c@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /tmp/DxASzu5FHk
-obj = /tmp/DxASzu5FHk/i386-asm.o
-obj = /tmp/DxASzu5FHk/x86_64-gen.o
-obj = /tmp/DxASzu5FHk/tccrun.o
-obj = /tmp/DxASzu5FHk/tccasm.o
-obj = /tmp/DxASzu5FHk/tccelf.o
-obj = /tmp/DxASzu5FHk/tccgen.o
-obj = /tmp/DxASzu5FHk/tccpp.o
-obj = /tmp/DxASzu5FHk/libtcc.o
-+ clang -o /home/ollisg/dev/FFI-TinyCC/share/libtcc.so -shared /tmp/DxASzu5FHk/i386-asm.o /tmp/DxASzu5FHk/x86_64-gen.o /tmp/DxASzu5FHk/tccrun.o /tmp/DxASzu5FHk/tccasm.o /tmp/DxASzu5FHk/tccelf.o /tmp/DxASzu5FHk/tccgen.o /tmp/DxASzu5FHk/tccpp.o /tmp/DxASzu5FHk/libtcc.o
+--- clean 1415237642---
+--- build 1415237643---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/y5gsWC7xtU
+--- clean 1415237774---
+--- build 1415237774---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/LlxVap6Kg7
+--- clean 1415237809---
+--- build 1415237809---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/CVFk2ehmV9
+--- clean 1415237826---
+--- build 1415237826---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/X9p6RQ0oxI
+--- clean 1415237881---
+--- build 1415237881---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/dTxOpbJh0s
+--- clean 1415237884---
+--- build 1415237885---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/xtFFWzX8NC
+--- clean 1415238443---
+--- build 1415238443---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/N2B62f87DT
+--- clean 1415238452---
+--- build 1415238452---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/u_BKiQpM_6
+--- clean 1415238474---
+--- build 1415238474---
+lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/i386-asm.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/libtcc.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccasm.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccelf.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccgen.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccpp.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccrun.o
+obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/x86_64-gen.o
++ cc -o /Users/ollisg/dev/FFI-TinyCC/share/libtcc.bundle -shared /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/i386-asm.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/libtcc.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccasm.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccelf.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccgen.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccpp.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccrun.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/x86_64-gen.o
 
