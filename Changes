@@ -1,5 +1,8 @@
 Revision history for FFI-TinyCC
 
+0.08      2014-11-09 07:47:07 -0500
+  - add Debian kFreeBSD support (skip some unsupported tests)
+
 0.07      2014-11-05 20:53:30 -0500
   - add OS X support
     remove trailing null characters from libtcc.a members (possible Archive::Ar bug)

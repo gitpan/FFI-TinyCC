@@ -8,7 +8,7 @@ use Carp qw( croak );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.07'; # VERSION
+our $VERSION = '0.08'; # VERSION
 
 
 sub _dlext
@@ -449,7 +449,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.07
+version 0.08
 
 =head1 SYNOPSIS
 
