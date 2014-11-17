@@ -20,8 +20,9 @@ share/README.txt
 share/build.log
 t/00_diag.t
 t/00_diag.txt
-t/01_use.t
-t/02_basic.t
+t/01_diag.t
+t/02_use.t
+t/03_basic.t
 t/add_file_c.t
 t/add_file_dll.t
 t/add_file_obj.t

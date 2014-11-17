@@ -1,52 +1,15 @@
---- clean 1415237632---
---- build 1415237632---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/Vi1I8JVtNI
-+ cc -o /Users/ollisg/dev/FFI-TinyCC/share/libtcc.bundle -shared
-
---- clean 1415237642---
---- build 1415237643---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/y5gsWC7xtU
---- clean 1415237774---
---- build 1415237774---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/LlxVap6Kg7
---- clean 1415237809---
---- build 1415237809---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/CVFk2ehmV9
---- clean 1415237826---
---- build 1415237826---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/X9p6RQ0oxI
---- clean 1415237881---
---- build 1415237881---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/dTxOpbJh0s
---- clean 1415237884---
---- build 1415237885---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/xtFFWzX8NC
---- clean 1415238443---
---- build 1415238443---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/N2B62f87DT
---- clean 1415238452---
---- build 1415238452---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/u_BKiQpM_6
---- clean 1415238474---
---- build 1415238474---
-lib = /Users/ollisg/.perlbrew/libs/perl-5.20.1@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
-tmp = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/i386-asm.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/libtcc.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccasm.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccelf.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccgen.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccpp.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccrun.o
-obj = /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/x86_64-gen.o
-+ cc -o /Users/ollisg/dev/FFI-TinyCC/share/libtcc.bundle -shared /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/i386-asm.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/libtcc.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccasm.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccelf.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccgen.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccpp.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/tccrun.o /var/folders/j7/q6wnf59d2qg191hdt5w2vj380000gn/T/hRm1RwabW8/x86_64-gen.o
+--- clean 1415188990---
+unlink /home/ollisg/dev/FFI-TinyCC/share/libtcc.so
+--- build 1415188990---
+lib = /home/ollisg/.perlbrew/libs/perl-5.20.0@dev/lib/perl5/auto/share/dist/Alien-TinyCC/lib/libtcc.a
+tmp = /tmp/vhF0Fj61Tc
+obj = /tmp/vhF0Fj61Tc/i386-asm.o
+obj = /tmp/vhF0Fj61Tc/x86_64-gen.o
+obj = /tmp/vhF0Fj61Tc/tccrun.o
+obj = /tmp/vhF0Fj61Tc/tccasm.o
+obj = /tmp/vhF0Fj61Tc/tccelf.o
+obj = /tmp/vhF0Fj61Tc/tccgen.o
+obj = /tmp/vhF0Fj61Tc/tccpp.o
+obj = /tmp/vhF0Fj61Tc/libtcc.o
++ clang -o /home/ollisg/dev/FFI-TinyCC/share/libtcc.so -shared /tmp/vhF0Fj61Tc/i386-asm.o /tmp/vhF0Fj61Tc/x86_64-gen.o /tmp/vhF0Fj61Tc/tccrun.o /tmp/vhF0Fj61Tc/tccasm.o /tmp/vhF0Fj61Tc/tccelf.o /tmp/vhF0Fj61Tc/tccgen.o /tmp/vhF0Fj61Tc/tccpp.o /tmp/vhF0Fj61Tc/libtcc.o
 
