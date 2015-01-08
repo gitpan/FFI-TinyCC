@@ -22,7 +22,7 @@ configure_requires:
   autodie: '0'
   perl: '5.010'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.024, CPAN::Meta::Converter version 2.142690'
+generated_by: 'Dist::Zilla version 5.030, CPAN::Meta::Converter version 2.143240'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -38,4 +38,4 @@ resources:
   bugtracker: https://github.com/plicease/FFI-TinyCC/issues
   homepage: http://perl.wdlabs.com/FFI-TinyCC
   repository: git://github.com/plicease/FFI-TinyCC.git
-version: '0.09'
+version: '0.10'

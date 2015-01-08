@@ -4,11 +4,11 @@ use strict;
 use warnings;
 use 5.010;
 use FFI::Raw;
-use Carp qw( croak );
+use Carp qw( croak carp );
 use File::ShareDir ();
 
 # ABSTRACT: Tiny C Compiler for FFI
-our $VERSION = '0.09'; # VERSION
+our $VERSION = '0.10'; # VERSION
 
 
 sub _dlext
@@ -362,8 +362,13 @@ sub get_symbol
 }
 
 
+# this variable will too be removed once this module
+# is ported to FFI::Platypus, so do not depeend on it!
+our $_get_ffi_raw_deprecation = 1;
+
 sub get_ffi_raw
 {
+  carp "FFI::TinyCC->get_ffi_raw is deprecated" if $_get_ffi_raw_deprecation;
   my($self, $symbol, @types) = @_;
   croak "you must at least specify a return type" unless @types > 0;
   my $ptr = $self->get_symbol($symbol);
@@ -449,7 +454,7 @@ FFI::TinyCC - Tiny C Compiler for FFI
 
 =head1 VERSION
 
-version 0.09
+version 0.10
 
 =head1 SYNOPSIS
 
@@ -466,8 +471,8 @@ version 0.09
    }
  });
  
- my $find_square = $tcc->get_ffi_raw(
-   'find_square',
+ my $find_square = FFI::Raw->new_from_ptr(
+   $tcc->get_symbol('find_square'),
    FFI::Raw::int,  # return type
    FFI::Raw::int,  # argument types
  );
@@ -601,9 +606,26 @@ L<FFI::Raw> or similar for use in your script.
 
 =head3 get_ffi_raw
 
+B<DEPRECATED>
+
  my $ffi = $tcc->get_ffi_raw($symbol_name, $return_type, @argument_types);
 
 Given the name of a function, return an L<FFI::Raw> instance that will allow you to call it from Perl.
+
+This method is deprecated, and will be removed from a future version of
+L<FFI::TinyCC>.  It will issue a warning if you try to use it.  Instead
+of this:
+
+ my $function = $ffi->get_ffi_raw($name, $ret, @args);
+
+Do this:
+
+ use FFI::Raw;
+ my $function = FFI::Raw->new_from_ptr($ffi->get_symbol($name), $ret, @args);
+
+Also, L<FFI::Raw> will be replaced as a prerequisite in an upcoming version
+of L<FFI::TinyCC>, so make sure that you C<use FFI::Raw> if you are using
+it.
 
 =head3 output_file
 
